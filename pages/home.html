@@ -85,28 +85,28 @@
 
 <div class="row">
     <div class="col-md-4 stats">
-        <h3>Network</h3>
-        <div><i class="fa fa-tachometer"></i> Hash Rate: <span id="networkHashrate"></span></div>
-        <div><i class="fa fa-clock-o"></i> Block Found: <span id="networkLastBlockFound"></span></div>
-        <div><i class="fa fa-unlock-alt"></i> Difficulty: <span id="networkDifficulty"></span></div>
-        <div><i class="fa fa-bars"></i> Blockchain Height: <span id="blockchainHeight"></span></div>
-        <div><i class="fa fa-money"></i> Last Reward: <span id="networkLastReward"></span></div>
-        <div><i class="fa fa-paw"></i> Last Hash: <a id="lastHash" target="_blank"></a></div>
+        <h3>全网(Network)</h3>
+        <div><i class="fa fa-tachometer"></i> 算力(Hash Rate): <span id="networkHashrate"></span></div>
+        <div><i class="fa fa-clock-o"></i> 最后块(Block Found): <span id="networkLastBlockFound"></span></div>
+        <div><i class="fa fa-unlock-alt"></i> 难度(Difficulty): <span id="networkDifficulty"></span></div>
+        <div><i class="fa fa-bars"></i> 块高度(Blockchain Height): <span id="blockchainHeight"></span></div>
+        <div><i class="fa fa-money"></i> 最新奖励(Last Reward): <span id="networkLastReward"></span></div>
+        <div><i class="fa fa-paw"></i> 最新哈希(Last Hash): <a id="lastHash" target="_blank"></a></div>
     </div>
 
     <div class="col-md-4 stats">
-        <h3>Our Pool</h3>
-        <div><i class="fa fa-tachometer"></i> Hash Rate: <span id="poolHashrate"></span></div>
-        <div><i class="fa fa-clock-o"></i> Block Found: <span id="poolLastBlockFound"></span></div>
-        <div><i class="fa fa-users"></i> Connected Miners: <span id="poolMiners"></span></div>
-        <div id="donations"><i class="fa fa-gift"></i> Donations: <span id="poolDonations"></span></div>
-        <div><i class="fa fa-money"></i> Total Pool Fee: <span id="poolFee"></span></div>
-        <div><i class="fa fa-history"></i> Block Found Every: <span id="blockSolvedTime"></span> (est.)</div>
+        <h3>当前矿池(Our Pool)</h3>
+        <div><i class="fa fa-tachometer"></i> 算力(Hash Rate): <span id="poolHashrate"></span></div>
+        <div><i class="fa fa-clock-o"></i> 最后块(Block Found): <span id="poolLastBlockFound"></span></div>
+        <div><i class="fa fa-users"></i> 在线矿工(Connected Miners): <span id="poolMiners"></span></div>
+        <div id="donations"><i class="fa fa-gift"></i> 捐赠(Donations): <span id="poolDonations"></span></div>
+        <div><i class="fa fa-money"></i> 全部矿池费用(Total Pool Fee): <span id="poolFee"></span></div>
+        <div><i class="fa fa-history"></i> 每个找到的块(Block Found Every): <span id="blockSolvedTime"></span> (est.)</div>
     </div>
 
     <div class="col-md-4 stats marketRate">
-        <h3 id="marketHeader">Market</h3>
-        <div class="marketFooter">Updated: <span id="marketLastUpdated"></span></div>
+        <h3 id="marketHeader">市场(Market)</h3>
+        <div class="marketFooter">更新(Updated): <span id="marketLastUpdated"></span></div>
         <div class="marketFooter">Powered by <a href="https://www.cryptonator.com/">Cryptonator</a></div>
     </div>
 </div>
@@ -210,7 +210,7 @@
 <!-- <hr> -->
 
 <div id="miningProfitCalc">
-    <h3>Estimate Mining Profits</h3>
+    <h3>挖矿利润估计(Estimate Mining Profits)</h3>
     <div id="calcHashHolder">
         <div class="input-group">
             <input type="number" class="form-control" id="calcHashRate" placeholder="Enter Your Hash Rate">
@@ -225,7 +225,7 @@
                 </ul>
             </div>
             <span class="input-group-addon">=</span>
-            <span class="input-group-addon" id="calcHashResultsHolder"><span id="calcHashAmount"></span> <span id="calcHashSymbol"></span>/day</span>
+            <span class="input-group-addon" id="calcHashResultsHolder"><span id="calcHashAmount"></span> <span id="calcHashSymbol"></span>/天</span>
         </div>
     </div>
 </div>
@@ -233,12 +233,12 @@
 <hr>
 
 <div class="stats">
-    <h3>Your Stats & Payment History</h3>
+    <h3>你的状态和支付历史(Your Stats & Payment History)</h3>
 
     <div class="input-group">
         <input class="form-control" id="yourStatsInput" type="text" placeholder="Enter Your Address">
         <span class="input-group-btn"><button class="btn btn-default" type="button" id="lookUp">
-            <span><i class="fa fa-search"></i> Lookup</span>
+            <span><i class="fa fa-search"></i> 查询(Loopup)</span>
             <span><i class="fa fa-refresh fa-spin"></i> Searching...</span>
         </button></span>
     </div>
@@ -247,11 +247,11 @@
         <div class="col-sm-4 stats">
             <div id="addressError"></div>
             <!-- <div class="yourStats"><i class="fa fa-key"></i> Address: <span id="yourAddressDisplay"></span></div> -->
-            <div class="yourStats"><i class="fa fa-bank"></i> Pending Balance: <span id="yourPendingBalance"></span></div>
-            <div class="yourStats"><i class="fa fa-money"></i> Total Paid: <span id="yourPaid"></span></div>
-            <div class="yourStats"><i class="fa fa-clock-o"></i> Last Share Submitted: <span id="yourLastShare"></span></div>
-            <div class="yourStats"><i class="fa fa-tachometer"></i> Hash Rate: <span id="yourHashrateHolder"></span></div>
-            <div class="yourStats"><i class="fa fa-cloud-upload"></i> Total Hashes Submitted: <span id="yourHashes"></span></div>
+            <div class="yourStats"><i class="fa fa-bank"></i> 未支持Pending Balance: <span id="yourPendingBalance"></span></div>
+            <div class="yourStats"><i class="fa fa-money"></i> 全部支付(Total Paid): <span id="yourPaid"></span></div>
+            <div class="yourStats"><i class="fa fa-clock-o"></i> 最后提交的分额(Last Share Submitted): <span id="yourLastShare"></span></div>
+            <div class="yourStats"><i class="fa fa-tachometer"></i> 算力(Hash Rate): <span id="yourHashrateHolder"></span></div>
+            <div class="yourStats"><i class="fa fa-cloud-upload"></i> 全部提交的哈希(Total Hashes Submitted): <span id="yourHashes"></span></div>
         </div>
         <div class="col-sm-4">            
             <div class="userChart" data-chart="user_hashrate">
@@ -274,15 +274,15 @@
 
     <br class="yourStats">
 
-    <h4 class="yourStats">Payments</h4>
+    <h4 class="yourStats">支付(Payments)</h4>
     <div class="yourStats table-responsive">
         <table class="table table-striped">
             <thead>
             <tr>
-                <th><i class="fa fa-clock-o"></i> Time Sent</th>
-                <th><i class="fa fa-paw"></i> Transaction Hash</th>
-                <th><i class="fa fa-money"></i> Amount</th>
-                <th><i class="fa fa-sitemap"></i> Mixin</th>
+                <th><i class="fa fa-clock-o"></i> 发送时间(Time Sent)</th>
+                <th><i class="fa fa-paw"></i> 交易哈希(Transaction Hash)</th>
+                <th><i class="fa fa-money"></i> 数量(Amount)</th>
+                <th><i class="fa fa-sitemap"></i> 混合(Mixin)</th>
             </tr>
             </thead>
             <tbody id="payments_rows">
@@ -291,7 +291,7 @@
         </table>
     </div>
     <p class="yourStats text-center">
-        <button type="button" class="btn btn-default" id="loadMorePayments">Load More</button>
+        <button type="button" class="btn btn-default" id="loadMorePayments">加载更多(Load More)</button>
     </p>
 
 </div>

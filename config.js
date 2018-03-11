@@ -2,7 +2,7 @@ var api = "http://bcn-pool.tyk.im:8117";
 
 var api_blockexplorer = "http://daemonhost.com:1118";
 
-var poolHost = "bcn.tyk.im";
+var poolHost = "bcn-pool.tyk.im";
 
 var irc = "irc.freenode.net/#bcn";
 
