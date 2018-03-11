@@ -129,21 +129,21 @@
         </div>
     </div>
     <div class="col-sm-20 chartWrap">
-        <h4>Difficulty</h4>
+        <h4>难度</h4>
         <div id="chartDifficulty" data-chart="diff">
             <div class="chart"></div>
             <!-- <p class="text-center" id="cur_diff">-</p> -->
         </div>
     </div>
     <div class="col-sm-20 chartWrap">
-        <h4>Hashrate</h4>
+        <h4>算力</h4>
         <div id="chartHashrate" data-chart="hashrate">
             <div class="chart"></div>
             <!-- <p class="text-center" id="cur_hashrate">-</p> -->
         </div>        
     </div>
     <div class="col-sm-20 chartWrap">        
-        <h4>Workers</h4>
+        <h4>矿工</h4>
         <div id="chartWorkers" data-chart="workers">
             <div class="chart"></div>
             <!-- <p class="text-center" id="cur_workers">-</p> -->
@@ -210,10 +210,10 @@
 <!-- <hr> -->
 
 <div id="miningProfitCalc">
-    <h3>挖矿利润估计(Estimate Mining Profits)</h3>
+    <h3>挖矿利润估算</h3>
     <div id="calcHashHolder">
         <div class="input-group">
-            <input type="number" class="form-control" id="calcHashRate" placeholder="Enter Your Hash Rate">
+            <input type="number" class="form-control" id="calcHashRate" placeholder="你的算力">
             <div class="input-group-btn">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="calcHashDropdown">
                     <span id="calcHashUnit" data-mul="1">KH/s</span> <span class="caret"></span>
@@ -233,13 +233,13 @@
 <hr>
 
 <div class="stats">
-    <h3>你的状态和支付历史(Your Stats & Payment History)</h3>
+    <h3>你的状态和支付历史</h3>
 
     <div class="input-group">
-        <input class="form-control" id="yourStatsInput" type="text" placeholder="Enter Your Address">
+        <input class="form-control" id="yourStatsInput" type="text" placeholder="输入你的钱包地址">
         <span class="input-group-btn"><button class="btn btn-default" type="button" id="lookUp">
-            <span><i class="fa fa-search"></i> 查询(Loopup)</span>
-            <span><i class="fa fa-refresh fa-spin"></i> Searching...</span>
+            <span><i class="fa fa-search"></i> 查询</span>
+            <span><i class="fa fa-refresh fa-spin"></i> 搜索...</span>
         </button></span>
     </div>
 
@@ -247,15 +247,15 @@
         <div class="col-sm-4 stats">
             <div id="addressError"></div>
             <!-- <div class="yourStats"><i class="fa fa-key"></i> Address: <span id="yourAddressDisplay"></span></div> -->
-            <div class="yourStats"><i class="fa fa-bank"></i> 未支持Pending Balance: <span id="yourPendingBalance"></span></div>
-            <div class="yourStats"><i class="fa fa-money"></i> 全部支付(Total Paid): <span id="yourPaid"></span></div>
-            <div class="yourStats"><i class="fa fa-clock-o"></i> 最后提交的分额(Last Share Submitted): <span id="yourLastShare"></span></div>
-            <div class="yourStats"><i class="fa fa-tachometer"></i> 算力(Hash Rate): <span id="yourHashrateHolder"></span></div>
-            <div class="yourStats"><i class="fa fa-cloud-upload"></i> 全部提交的哈希(Total Hashes Submitted): <span id="yourHashes"></span></div>
+            <div class="yourStats"><i class="fa fa-bank"></i> 未支付: <span id="yourPendingBalance"></span></div>
+            <div class="yourStats"><i class="fa fa-money"></i> 全部已支付: <span id="yourPaid"></span></div>
+            <div class="yourStats"><i class="fa fa-clock-o"></i> 最后提交分额: <span id="yourLastShare"></span></div>
+            <div class="yourStats"><i class="fa fa-tachometer"></i> 算力: <span id="yourHashrateHolder"></span></div>
+            <div class="yourStats"><i class="fa fa-cloud-upload"></i> 总哈希提交: <span id="yourHashes"></span></div>
         </div>
         <div class="col-sm-4">            
             <div class="userChart" data-chart="user_hashrate">
-                <h4>Hash Rate</h4>
+                <h4>算力</h4>
                 <div class="chart">
                     
                 </div>                
@@ -263,7 +263,7 @@
         </div> 
         <div class="col-sm-4">
             <div class="userChart" data-chart="user_payments">
-                <h4>Payments</h4>
+                <h4>支持</h4>
                 <div class="chart">
                     
                 </div> 
@@ -274,15 +274,15 @@
 
     <br class="yourStats">
 
-    <h4 class="yourStats">支付(Payments)</h4>
+    <h4 class="yourStats">支付</h4>
     <div class="yourStats table-responsive">
         <table class="table table-striped">
             <thead>
             <tr>
-                <th><i class="fa fa-clock-o"></i> 发送时间(Time Sent)</th>
-                <th><i class="fa fa-paw"></i> 交易哈希(Transaction Hash)</th>
-                <th><i class="fa fa-money"></i> 数量(Amount)</th>
-                <th><i class="fa fa-sitemap"></i> 混合(Mixin)</th>
+                <th><i class="fa fa-clock-o"></i> 发送时间</th>
+                <th><i class="fa fa-paw"></i> 交易哈希</th>
+                <th><i class="fa fa-money"></i> 数量(</th>
+                <th><i class="fa fa-sitemap"></i> 混合</th>
             </tr>
             </thead>
             <tbody id="payments_rows">
@@ -291,7 +291,7 @@
         </table>
     </div>
     <p class="yourStats text-center">
-        <button type="button" class="btn btn-default" id="loadMorePayments">加载更多(Load More)</button>
+        <button type="button" class="btn btn-default" id="loadMorePayments">加载更多</button>
     </p>
 
 </div>
