@@ -1,6 +1,6 @@
 var api = "http://bcn-pool.tyk.im:8117";
 
-var api_blockexplorer = "http://daemonhost.com:1118";
+var api_blockexplorer = "http://bcn-pool.tyk.im:8117";
 
 var poolHost = "bcn-pool.tyk.im";
 
@@ -12,9 +12,9 @@ var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
 var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
 
-var blockchainExplorer = "http://chainradar.com/{symbol}/block/{id}";
+var blockchainExplorer = "http://vig.tyk.im/?hash={id}#blockchain_block";
 
-var transactionExplorer = "http://chainradar.com/{symbol}/transaction/{id}";
+var transactionExplorer = "http://vig.tyk.im/?hash={id}#blockchain_transaction";
 
 var themeCss = "themes/default-theme.css";
 
